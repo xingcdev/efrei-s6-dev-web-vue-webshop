@@ -1,14 +1,17 @@
 <template>
-  <div id="app" class="container">
-    <img alt="Vue logo" src="./assets/logo.png" />
+  <div class="container">
+    <Menu></Menu>
+    <IndexPage></IndexPage>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import IndexPage from './components/IndexPage.vue';
+import Menu from './components/Menu.vue';
 
 @Component({
-  components: {},
+  components: { IndexPage, Menu },
 })
 export default class App extends Vue {}
 </script>
